@@ -51,7 +51,7 @@ def getQuestion(qType):
         sameOrNot = random.randint(1,2)
         if sameOrNot == 1:
             expectedAns = True
-            ran1to3 = random.randin(1,3)
+            ran1to3 = random.randint(1,3)
             if ran1to3 == 1:
                 s = "ABEFGHMPRT"
                 ranIdx = random.randint(0,len(s)-1)
