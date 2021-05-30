@@ -125,10 +125,8 @@ def readKeyboardInput(qType, question):
         with keyboard.Events() as events:
             event = events.get(1e6)
             #block as much as possible
-            # if event.key == keyboard.KeyCode.from_char('f'):
             if event.key == keyboard.Key.space:
                 toc = datetime.datetime.now()
-                # print(f"key pressed was{event.key}")
                 qAns = True
             else:
                 print(f"ERROR, you pressed an invalid key, key pressed was {event.key}")
@@ -142,15 +140,11 @@ def readKeyboardInput(qType, question):
         with keyboard.Events() as events:
             event = events.get(1e6)
             #block as much as possible
-            # if event.key == keyboard.KeyCode.from_char('f'):
             if event.key == keyboard.Key.space:
                 toc = datetime.datetime.now()
-                # print(f"key pressed was{event.key}")
                 qAns = True
-            # elif event.key == keyboard.KeyCode.from_char('j'):
             if event.key == keyboard.Key.enter:
                 toc = datetime.datetime.now()
-                # print(f"key pressed was{event.key}")
                 qAns = False
             else:
                 print(f"ERROR, you pressed an invalid key, key pressed was {event.key}")
