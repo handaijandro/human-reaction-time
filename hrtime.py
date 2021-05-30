@@ -99,13 +99,13 @@ def resultToCsvFormat(time, qType, question, expectedAns, qAns):
 
 def writeToCsv(resultArr, qType):
     if qType == 0:
-        nameOfFile = 'kadai1.csv'
+        nameOfFile = 'simpleReactionResult.csv'
     elif qType == 1:
-        nameOfFile = 'kadai2.csv'
+        nameOfFile = 'physicalMatchingResult.csv'
     if qType == 2:
-        nameOfFile = 'kadai3.csv'
+        nameOfFile = 'nameMatchingResult.csv'
     if qType == 3:
-        nameOfFile = 'kadai4.csv'
+        nameOfFile = 'categoryMatchingResult.csv'
     with open(nameOfFile, 'w') as f:
         if qType == 0:
             f.write('time, qType, question, expectedAns, qAns')
