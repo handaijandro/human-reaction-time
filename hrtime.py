@@ -2,7 +2,7 @@ import datetime
 import random
 from time import sleep
 from pynput import keyboard
-
+import sys
 
 #now 
 def getQuestion(qType):
@@ -130,6 +130,9 @@ def readKeyboardInput(qType, question):
                 toc = datetime.datetime.now()
                 # print(f"key pressed was{event.key}")
                 qAns = True
+            else:
+                print(f"ERROR, you pressed an invalid key, key pressed was {event.key}")
+                sys.exit()
             print("#------------------------------------#")
 
     else:
@@ -149,6 +152,10 @@ def readKeyboardInput(qType, question):
                 toc = datetime.datetime.now()
                 # print(f"key pressed was{event.key}")
                 qAns = False
+            else:
+                print(f"ERROR, you pressed an invalid key, key pressed was {event.key}")
+                sys.exit()
+
         print("#------------------------------------#")
 
     time = getTime(tic, toc)
