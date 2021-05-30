@@ -199,7 +199,7 @@ def printRules(qType):
 if __name__ == "__main__":
     qType = int(input("Select question type (from 1 to 4)")) - 1 #from 0 to 3 (Questions 1 to 4)
     resultCsvArr = []
-    N = 100 #回数
+    N = int(input("How many times do you want to repeat each test?")) #回数
     printRules(qType)
     for i in range(N):
         if qType == 0:
