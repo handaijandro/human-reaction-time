@@ -54,23 +54,20 @@ def getQuestion(qType):
             ran1to3 = random.randint(1,3)
             if ran1to3 == 1:
                 s = "ABEFGHMPRT"
-                ranIdx = random.randint(0,len(s)-1)
-                char1 = s[ranIdx]
-                char2 = s[ranIdx]
+                char1 = s[random.randint(0,len(s)-1)]
+                char2 = s[random.randint(0,len(s)-1)]
                 question =  char1 + ' ' + char2
                 # return question, expectedAns
             if ran1to3 == 2:
                 s = "abefghmprt"
-                ranIdx = random.randint(0,len(s)-1)
-                char1 = s[ranIdx]
-                char2 = s[ranIdx]
+                char1 = s[random.randint(0,len(s)-1)]
+                char2 = s[random.randint(0,len(s)-1)]
                 question =  char1 + ' ' + char2
                 # return question, expectedAns
             if ran1to3 == 3:
                 s = "!@#$%&*+=?"
-                ranIdx = random.randint(0,len(s)-1)
-                char1 = s[ranIdx]
-                char2 = s[ranIdx]
+                char1 = s[random.randint(0,len(s)-1)]
+                char2 = s[random.randint(0,len(s)-1)]
                 question =  char1 + ' ' + char2
             # return question, expectedAns
         elif sameOrNot == 2:
