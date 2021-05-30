@@ -143,7 +143,7 @@ def readKeyboardInput(qType, question):
             if event.key == keyboard.Key.space:
                 toc = datetime.datetime.now()
                 qAns = True
-            if event.key == keyboard.Key.enter:
+            elif event.key == keyboard.Key.enter:
                 toc = datetime.datetime.now()
                 qAns = False
             else:
